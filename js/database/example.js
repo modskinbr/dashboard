@@ -1,5 +1,8 @@
-fetch("https://modskinbr.github.io/L.S.P.-UT/test/students.json")
+fetch(".json")
 .then(response => {
    return response.json();
 })
-.then(jsondata => console.log(jsondata));
+.then(jsondata => { 
+	
+}
+);

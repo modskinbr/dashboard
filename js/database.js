@@ -245,9 +245,12 @@ const ID05 = {
   Verificacoes: "0",
 };
 
+
 // Login //
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
+	const response = fetch("js/database/users.json").then((res) => res.json());
+	console.log(response);
     const username = loginForm.username.value;
     const password = loginForm.password.value;
 
