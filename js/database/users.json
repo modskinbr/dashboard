@@ -1,10 +1,42 @@
 {
-  "products": [
-    { "Name": "Cheese", "Price": 2.5, "Location": "Refrigerated foods" },
-    { "Name": "Crisps", "Price": 3, "Location": "the Snack isle" },
-    { "Name": "Pizza", "Price": 4, "Location": "Refrigerated foods" },
-    { "Name": "Chocolate", "Price": 1.5, "Location": "the Snack isle" },
-    { "Name": "Self-raising flour", "Price": 1.5, "Location": "Home baking" },
-    { "Name": "Ground almonds", "Price": 3, "Location": "Home baking" }
-  ]
+  "ID01": {
+	"Nome": "Lucas",
+	"Imagem": "01.png",
+	"Pontos": "30",
+	"Rank": "1",
+	"Rank_i": "rank_1",
+	"Pontos_Miticos": "0",
+	"Elo": "sem_elo",
+	"Elo_i": "0",
+	"Destaque": "sem",
+	"Destaque_i": "0",
+	"Fragmentos": "0",
+	"Fragmentos_Estelares": "0",
+	"Essencia_Mitica": "0",
+	"Moedas": "0",
+	"Parceria": "Nenhuma",
+	"Cargo": "dev",
+	"Risco": "vfalse",
+	"Imune": "vfalse",
+	"Progresso": "0%",
+
+	"Divulgacoes": "0",
+	"Colaboracoes": "0",
+	"Videos": "0",
+
+	"Contribuicoes_Federativa": "0",
+	"Participacoes": "0",
+
+	"Optido_agora": "Nada",	"PG_agora": "0", "BE_agora": "0% - 0",
+	"Optido_2": "Nada",	"PG_2": "0", "BE_2": "0% - 0",
+	"Optido_3": "Nada",	"PG_3": "0", "BE_3": "0% - 0",
+	"Optido_4": "Nada",	"PG_4": "0", "BE_4": "0% - 0",
+	"Optido_5": "Nada",	"PG_5": "0", "BE_5": "0% - 0",
+	"Optido_6": "Nada",	"PG_6": "0", "BE_6": "0% - 0",
+	"Optido_7": "Nada",	"PG_7": "0", "BE_7": "0% - 0",
+
+	"Contribuicoes_Tester": "0",
+	"Tarefas": "0",
+	"Verificacoes": "0",
+  },
 }
