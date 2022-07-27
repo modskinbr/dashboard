@@ -1,3 +1,6 @@
+const response = fetch("js/database/users.json").then((res) => res.json());
+console.log(response);
+
 // Formulario de Login //
 const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("login-form-submit");
@@ -249,8 +252,6 @@ const ID05 = {
 // Login //
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
-	const response = fetch("js/database/users.json").then((res) => res.json());
-	console.log(response);
     const username = loginForm.username.value;
     const password = loginForm.password.value;
 
