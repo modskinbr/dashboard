@@ -120,7 +120,7 @@ const ID01 = {
   Obtido7: "---" , Bonus7: "0% - 0" , Quantidade7: "0",
   ////
 };
-const ID05 = {
+const ID02 = {
   Nome: "Gabriel",
   // Bruch
   Imagem: img+"nouser"+type1,
@@ -165,80 +165,11 @@ const ID05 = {
   ////
 };
 const ID03 = {
-  Nome: "Adne",
-  Imagem: img+"nouser.png",
-  Pontos: "30",
-  Rank: "1",
-  Rank_Image: rank_1,
-  Pontos_Miticos: "0",
-  Elo: sem_elo,
-  Elo_Image: rank_0,
-  Destaque: sem,
-  Destaque_Image: destaque_0,
-  Fragmentos: 0,
-  Fragmentos_Estelares: 0,
-  Essencia_Mitica: 0,
-  Moedas: 0,
-  Parceria: "Nenhuma",
-  Cargo: tester,
-  Cargo_Image: tester_img,
-  Risco: vfalse,
-  Imune: vfalse,
-  Progresso: "0%",
-  // Divulgadores
-  Divulgacoes: "0",
-  Colaboracoes: "0",
-  Video: "0",
-  // Federativa
-  Contribuicoes_Federativa: "0",
-  Participacoes: "0",
-  Bonus_Extra: "0",
-  // Testers
-  Contribuicoes_Tester: "0",
-  Tarefas: "0",
-  Verificacoes: "0",
-};
-const ID04 = {
-  Nome: "Victor",
-  // Nick
-  Imagem: img+"nouser.png",
-  Pontos: "30",
-  Rank: "1",
-  Rank_Image: rank_1,
-  Pontos_Miticos: "0",
-  Elo: sem_elo,
-  Elo_Image: rank_0,
-  Destaque: sem,
-  Destaque_Image: destaque_0,
-  Fragmentos: 0,
-  Fragmentos_Estelares: 0,
-  Essencia_Mitica: 0,
-  Moedas: 0,
-  Parceria: "TAIKUNDROME",
-  Cargo: tester,
-  Cargo_Image: tester_img,
-  Risco: vfalse,
-  Imune: vfalse,
-  Progresso: "0%",
-  // Divulgadores
-  Divulgacoes: "0",
-  Colaboracoes: "0",
-  Video: "0",
-  // Federativa
-  Contribuicoes_Federativa: "0",
-  Participacoes: "0",
-  Bonus_Extra: "0",
-  // Testers
-  Contribuicoes_Tester: "0",
-  Tarefas: "0",
-  Verificacoes: "0",
-};
-const ID02 = {
-  DiscordID: "hattsug#5278",
-  Nasceu: "2002",
-  Nome: "Gustavo",
+  DiscordID: "IIIIIIIIIIIII#0885",
+  Nasceu: "2006",
+  Nome: "Heitor",
   // hattsug
-  Imagem: img+"Gustavo"+type1,
+  Imagem: img+"Heitor"+type1,
   Pontos: "30",
   Rank: "1",
   Rank_Image: rank_1,
@@ -252,8 +183,8 @@ const ID02 = {
   Essencia_Mitica: 0,
   Moedas: 0,
   Parceria: "Nenhuma",
-  Cargo: tester,
-  Cargo_Image: tester_img,
+  Cargo: designer,
+  Cargo_Image: designer_img,
   Risco: vfalse,
   Imune: vtrue,
   Reputacao: "100%",
