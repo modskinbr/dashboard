@@ -15,7 +15,7 @@ body {
 }
 
 #wallp {
-    background-image: url(https://images.wallpapersden.com/image/download/heimerdinger-in-league-of-legends_a25lZ2aUmZqaraWkpJRnamtlrWZnbWU.jpg);
+    background-image: url(../assets/wallpapers/heimer.jpg);
     background-position: bottom;
     border-radius: 25px;
     border: 3px solid black;
@@ -25,7 +25,7 @@ body {
 }
 
 .poro1 {
-	background-image: url(./assets/wallpapers/heimer.jpg);
+	background-image: url(https://c4.wallpaperflare.com/wallpaper/621/754/384/legends-of-runeterra-league-of-legends-hd-wallpaper-preview.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
