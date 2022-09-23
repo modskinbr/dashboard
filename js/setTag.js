@@ -50,6 +50,17 @@ function setTag() {
 		contratacao[0].classList.add("hidden");
 		contratacao[1].classList.add("hidden");
 
+	} else if ( database == "Designer" ) {
+
+		federativa[0].classList.remove("hidden");
+		federativa[1].classList.remove("hidden");
+		testadores[0].classList.add("hidden");
+		testadores[1].classList.add("hidden");
+		academia[0].classList.add("hidden");
+		academia[1].classList.add("hidden");
+		contratacao[0].classList.add("hidden");
+		contratacao[1].classList.add("hidden");
+
 	} else if ( database == "Jornalista" ) {
 
 		federativa[0].classList.remove("hidden");
