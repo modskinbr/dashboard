@@ -101,7 +101,7 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("data26", ID02.Contribuicoes_Tester);
         localStorage.setItem("data27", ID02.Tarefas);
         localStorage.setItem("data28", ID02.Verificacoes);
-        localStorage.setItem("data29", ID02.Progresso);
+        localStorage.setItem("data29", ID02.Reputacao);
         localStorage.setItem("data30", ID02.Nasceu);
 		localStorage.setItem("datap1", ID02.Obtido_recente);
 		localStorage.setItem("datap2", ID02.Obtido2);
