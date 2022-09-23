@@ -109,7 +109,7 @@
                                              </div>
                                              <div>
                                                 <span class="heading" id="progresso">0</span>
-                                                <span class="description">Progresso</span>
+                                                <span class="description">Reputação</span>
                                              </div>
                                              <div>
                                                 <span class="heading" id="ranking">0</span>
@@ -274,16 +274,21 @@
          	document.getElementById("dest").innerText = base9;
          	document.getElementById("destimg").src = base10;
 			// Progresso
-			document.getElementById("progressbar").style = "width: "+base29;
 			document.getElementById("progresso").innerText = base29;
 			// Nome logado
-			document.getElementById("name").innerText = userdate;
+			document.getElementById("name").innerText = base1;
 			// Cargo & Imagem
 			document.getElementById("cargo").innerText = base16;
 			document.getElementById("cargoimg").src = base17;
 			// Idade
 			var years = new Date(new Date() - new Date(base30)).getFullYear() - 1970;
 			document.getElementById("idade").innerText = years+" anos";
+
+		if ( base3 == "∞" ) {
+		document.getElementById("progressbar").style.width = "100%";
+		} else {
+				document.getElementById("progressbar").style.width = base3+"%";
+			}
          }
          }
       </script>

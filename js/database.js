@@ -13,7 +13,6 @@ loginButton.addEventListener("click", (e) => {
     const password = loginForm.password.value;
 
     if (username == "Luckey" && password == "smodskins") {
-        location.href = urlhref;
         localStorage.setItem("userdate", username );
         localStorage.setItem("validate", password );
         localStorage.setItem("data0", ID01.DiscordID);
@@ -45,7 +44,7 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("data26", ID01.Contribuicoes_Tester);
         localStorage.setItem("data27", ID01.Tarefas);
         localStorage.setItem("data28", ID01.Verificacoes);
-        localStorage.setItem("data29", ID01.Progresso);
+        localStorage.setItem("data29", ID01.Reputacao);
         localStorage.setItem("data30", ID01.Nasceu);
 		localStorage.setItem("datap1", ID01.Obtido_recente);
 		localStorage.setItem("datap2", ID01.Obtido2);
@@ -68,9 +67,9 @@ loginButton.addEventListener("click", (e) => {
 		localStorage.setItem("dataq5", ID01.Quantidade5);
 		localStorage.setItem("dataq6", ID01.Quantidade6);
 		localStorage.setItem("dataq7", ID01.Quantidade7);
+        location.href = urlhref;
     }
     else if (username == "mobdick123" && password == "mortadela123@") {
-        location.href = urlhref;
         localStorage.setItem("userdate", username );
         localStorage.setItem("validate", password );
         localStorage.setItem("data0", ID02.DiscordID);
@@ -125,6 +124,7 @@ loginButton.addEventListener("click", (e) => {
 		localStorage.setItem("dataq5", ID02.Quantidade5);
 		localStorage.setItem("dataq6", ID02.Quantidade6);
 		localStorage.setItem("dataq7", ID02.Quantidade7);
+        location.href = urlhref;
     } 
     else {
         loginErrorMsg.style.opacity = 1;

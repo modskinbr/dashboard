@@ -6,7 +6,7 @@ function setTag() {
 	var contratacao = document.getElementsByClassName("Cont");
 	console.log("Cargo do Usuario: " + database);
 
-	if ( database == "Dev" ) {
+	if ( database == "Desenvolvedor" ) {
 
 		federativa[0].classList.remove("hidden");
 		federativa[1].classList.remove("hidden");
@@ -17,7 +17,7 @@ function setTag() {
 		contratacao[0].classList.remove("hidden");
 		contratacao[1].classList.remove("hidden");
 
-	} else if ( database == "Mod" ) {
+	} else if ( database == "Moderador" ) {
 
 		federativa[0].classList.remove("hidden");
 		federativa[1].classList.remove("hidden");
@@ -28,7 +28,7 @@ function setTag() {
 		contratacao[0].classList.add("hidden");
 		contratacao[1].classList.add("hidden");
 
-	} else if ( database == "Sup" ) {
+	} else if ( database == "Suporte" ) {
 
 		federativa[0].classList.remove("hidden");
 		federativa[1].classList.remove("hidden");
@@ -39,12 +39,12 @@ function setTag() {
 		contratacao[0].classList.add("hidden");
 		contratacao[1].classList.add("hidden");
 
-	} else if ( database == "Tester" ) {
+	} else if ( database == "Testador" ) {
 
 		federativa[0].classList.remove("hidden");
 		federativa[1].classList.remove("hidden");
-		testadores[0].classList.remove("hidden");
-		testadores[1].classList.remove("hidden");
+		testadores[0].classList.add("hidden");
+		testadores[1].classList.add("hidden");
 		academia[0].classList.add("hidden");
 		academia[1].classList.add("hidden");
 		contratacao[0].classList.add("hidden");

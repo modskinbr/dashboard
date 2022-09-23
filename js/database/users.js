@@ -76,7 +76,7 @@ var type2 = ".jpg"
 // Perfis dos Usuarios! //
 const ID01 = {
   DiscordID: "Luckey#6161",
-  Nasceu: "07/06/2002",
+  Nasceu: "2002",
   Nome: "Lucas",
   // Luckey
   Imagem: img+"Luckey"+type1,
@@ -120,7 +120,7 @@ const ID01 = {
   Obtido7: "---" , Bonus7: "0% - 0" , Quantidade7: "0",
   ////
 };
-const ID02 = {
+const ID05 = {
   Nome: "Gabriel",
   // Bruch
   Imagem: img+"nouser"+type1,
@@ -141,7 +141,7 @@ const ID02 = {
   Cargo_Image: dev_img,
   Risco: vfalse,
   Imune: vtrue,
-  Progresso: "100%",
+  Reputacao: "100%",
   // Divulgadores
   Divulgacoes: "0",
   Colaboracoes: "0",
@@ -233,9 +233,11 @@ const ID04 = {
   Tarefas: "0",
   Verificacoes: "0",
 };
-const ID05 = {
+const ID02 = {
+  DiscordID: "hattsug#5278",
+  Nasceu: "2002",
   Nome: "Gustavo",
-  // Nick
+  // hattsug
   Imagem: img+"Gustavo"+type1,
   Pontos: "30",
   Rank: "1",
@@ -253,8 +255,8 @@ const ID05 = {
   Cargo: tester,
   Cargo_Image: tester_img,
   Risco: vfalse,
-  Imune: vfalse,
-  Progresso: "0%",
+  Imune: vtrue,
+  Reputacao: "100%",
   // Divulgadores
   Divulgacoes: "0",
   Colaboracoes: "0",
@@ -267,4 +269,13 @@ const ID05 = {
   Contribuicoes_Tester: "0",
   Tarefas: "0",
   Verificacoes: "0",
+  // RELATORIO DE PONTUAÇÃO //
+  Obtido_recente: "Primeiro Login" , Bonus_recente: "1% - 5" , Quantidade_recente: "30",
+  Obtido2: "" , Bonus2: "" , Quantidade2: "",
+  Obtido3: "" , Bonus3: "" , Quantidade3: "",
+  Obtido4: "" , Bonus4: "" , Quantidade4: "",
+  Obtido5: "" , Bonus5: "" , Quantidade5: "",
+  Obtido6: "" , Bonus6: "" , Quantidade6: "",
+  Obtido7: "" , Bonus7: "" , Quantidade7: "",
+  ////
 };
