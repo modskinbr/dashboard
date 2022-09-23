@@ -97,7 +97,7 @@ const ID01 = {
   Cargo_Image: dev_img,
   Risco: vfalse,
   Imune: vtrue,
-  Progresso: "100%",
+  Reputacao: "100%",
   // Divulgadores
   Divulgacoes: "0",
   Colaboracoes: "0",
