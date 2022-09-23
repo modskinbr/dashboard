@@ -68,9 +68,6 @@ var supp = "Suporte";
 var tester = "Testador"
 var designer = "Designer"
 
-// Painel
-const urlhref = "index.html"
-
 // Imagem do Perfil //
 var img = "assets/users/"
 var type1 = ".png"

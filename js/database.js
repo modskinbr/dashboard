@@ -3,6 +3,9 @@ const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("login-form-submit");
 const loginErrorMsg = document.getElementById("login-error-msg");
 
+// Painel
+const urlhref = "painel.html"
+
 // Login //
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
@@ -66,7 +69,7 @@ loginButton.addEventListener("click", (e) => {
 		localStorage.setItem("dataq6", ID01.Quantidade6);
 		localStorage.setItem("dataq7", ID01.Quantidade7);
     }
-    else if (username == "taikunxx3" && password == "taik9348") {
+    else if (username == "mobdick123" && password == "mortadela123@") {
         location.href = urlhref;
         localStorage.setItem("userdate", username );
         localStorage.setItem("validate", password );
