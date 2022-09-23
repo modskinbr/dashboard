@@ -125,7 +125,7 @@ loginButton.addEventListener("click", (e) => {
 		localStorage.setItem("dataq5", ID02.Quantidade5);
 		localStorage.setItem("dataq6", ID02.Quantidade6);
 		localStorage.setItem("dataq7", ID02.Quantidade7);
-    }
+    } 
     else {
         loginErrorMsg.style.opacity = 1;
         localStorage.clear();
