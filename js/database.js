@@ -1,253 +1,62 @@
-const response = fetch("js/database/users.json").then((res) => res.json());
-console.log(response);
-
 // Formulario de Login //
 const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("login-form-submit");
 const loginErrorMsg = document.getElementById("login-error-msg");
 
-// Imagens de Ranks
-var rank_0 = "image/banco_de_dados/Rank_0.png";
-var rank_1 = "image/banco_de_dados/Rank_1.png";
-var rank_2 = "image/banco_de_dados/Rank_2.png";
-var rank_3 = "image/banco_de_dados/Rank_3.png";
-var rank_4 = "image/banco_de_dados/Rank_4.png";
-var rank_5 = "image/banco_de_dados/Rank_5.png";
-var rank_6 = "image/banco_de_dados/Rank_6.png";
-var rank_7 = "image/banco_de_dados/Rank_7.png";
-
-// Imagens de Destaque
-var destaque_0 = "image/banco_de_dados/Destaque_0.png";
-var destaque_1 = "image/banco_de_dados/Destaque_1.png";
-var destaque_2 = "image/banco_de_dados/Destaque_2.png";
-var destaque_3 = "image/banco_de_dados/Destaque_3.png";
-var destaque_4 = "image/banco_de_dados/Destaque_4.png";
-
-// Imagens de Elos
-var elo_ferro = "image/banco_de_dados/Ferro.png";
-var elo_bronze = "image/banco_de_dados/Bronze.png";
-var elo_prata = "image/banco_de_dados/Prata.png";
-var elo_ouro = "image/banco_de_dados/Ouro.png";
-var elo_platina = "image/banco_de_dados/Platina.png";
-var elo_diamante = "image/banco_de_dados/Diamante.png";
-var elo_mestre = "image/banco_de_dados/Mestre.png";
-var elo_grao_mestre = "image/banco_de_dados/Grao_Mestre.png";
-var elo_desafiante = "image/banco_de_dados/Desafiante.png";
-
-// Imagens de Cargos
-var dev_img = "image/banco_de_dados/Dev.png";
-var mod_img = "image/banco_de_dados/Mod.png";
-var supp_img = "image/banco_de_dados/Supp.png";
-var tester_img = "image/banco_de_dados/Tester.png";
-var designer_img = "image/banco_de_dados/Designer.png";
-
-// Variaveis
-var vfalse = "hidden";
-var vtrue = "revert"
-var imune = "(Imune)"
-var sem_elo = "Sem Elo";
-var sem_rank = "Sem Rank";
-var sem = "Sem"
-
-// Elos
-var ferro = "Ferro";
-var bronze = "Bronze";
-var prata = "Prata";
-var ouro = "Ouro";
-var platina = "Platina";
-var diamante = "Diamante";
-var mestre = "Mestre";
-var grao_mestre = "Grão Mestre";
-var desafiante = "Desafiante";
-
-// Cargos
-var dev = "Dev";
-var mod = "Mod";
-var supp = "Supp";
-var tester = "Tester"
-var designer = "Designer"
-
-// Painel
-const urlhref = "index.html"
-
-// Imagem do Perfil //
-var img = "image/Profile/"
-
-
-// Perfis dos Usuarios! //
-const ID01 = {
-  Nome: "Lucas",
-  // Luckey
-  Imagem: img+"01.png",
-  Pontos: "30",
-  Rank: "1",
-  Rank_Image: rank_1,
-  Pontos_Miticos: "0",
-  Elo: sem_elo,
-  Elo_Image: rank_0,
-  Destaque: sem,
-  Destaque_Image: destaque_0,
-  Fragmentos: 0,
-  Fragmentos_Estelares: 0,
-  Essencia_Mitica: 0,
-  Moedas: 0,
-  Parceria: "Nenhuma",
-  Cargo: dev,
-  Cargo_Image: dev_img,
-  Risco: vfalse,
-  Imune: vfalse,
-  Progresso: "0%",
-  // Divulgadores
-  Divulgacoes: "0",
-  Colaboracoes: "0",
-  Video: "0",
-  // Federativa
-  Contribuicoes_Federativa: "0",
-  Participacoes: "0",
-  Bonus_Extra: "0",
-  // Testers
-  Contribuicoes_Tester: "0",
-  Tarefas: "0",
-  Verificacoes: "0",
-};
-const ID02 = {
-  Nome: "Victor",
-  // Nick
-  Imagem: img+"02.png",
-  Pontos: "30",
-  Rank: "1",
-  Rank_Image: rank_1,
-  Pontos_Miticos: "0",
-  Elo: sem_elo,
-  Elo_Image: rank_0,
-  Destaque: sem,
-  Destaque_Image: destaque_0,
-  Fragmentos: 0,
-  Fragmentos_Estelares: 0,
-  Essencia_Mitica: 0,
-  Moedas: 0,
-  Parceria: "TAIKUNDROME",
-  Cargo: tester,
-  Cargo_Image: tester_img,
-  Risco: vfalse,
-  Imune: vfalse,
-  Progresso: "0%",
-  // Divulgadores
-  Divulgacoes: "0",
-  Colaboracoes: "0",
-  Video: "0",
-  // Federativa
-  Contribuicoes_Federativa: "0",
-  Participacoes: "0",
-  Bonus_Extra: "0",
-  // Testers
-  Contribuicoes_Tester: "0",
-  Tarefas: "0",
-  Verificacoes: "0",
-};
-const ID03 = {
-  Nome: "Adne",
-  Imagem: img+"03.png",
-  Pontos: "30",
-  Rank: "1",
-  Rank_Image: rank_1,
-  Pontos_Miticos: "0",
-  Elo: sem_elo,
-  Elo_Image: rank_0,
-  Destaque: sem,
-  Destaque_Image: destaque_0,
-  Fragmentos: 0,
-  Fragmentos_Estelares: 0,
-  Essencia_Mitica: 0,
-  Moedas: 0,
-  Parceria: "Nenhuma",
-  Cargo: tester,
-  Cargo_Image: tester_img,
-  Risco: vfalse,
-  Imune: vfalse,
-  Progresso: "0%",
-  // Divulgadores
-  Divulgacoes: "0",
-  Colaboracoes: "0",
-  Video: "0",
-  // Federativa
-  Contribuicoes_Federativa: "0",
-  Participacoes: "0",
-  Bonus_Extra: "0",
-  // Testers
-  Contribuicoes_Tester: "0",
-  Tarefas: "0",
-  Verificacoes: "0",
-};
-const ID04 = {
-  Nome: "Pedro",
-  Imagem: img+"04.png",
-  Pontos: "30",
-  Rank: "1",
-  Rank_Image: rank_1,
-  Pontos_Miticos: "0",
-  Elo: sem_elo,
-  Elo_Image: rank_0,
-  Destaque: sem,
-  Destaque_Image: destaque_0,
-  Fragmentos: 0,
-  Fragmentos_Estelares: 0,
-  Essencia_Mitica: 0,
-  Moedas: 0,
-  Parceria: "Nenhuma",
-  Cargo: mod,
-  Cargo_Image: mod_img,
-  Risco: vfalse,
-  Imune: vfalse,
-  Progresso: "0%",
-  // Divulgadores
-  Divulgacoes: "0",
-  Colaboracoes: "0",
-  Video: "0",
-  // Federativa
-  Contribuicoes_Federativa: "0",
-  Participacoes: "0",
-  Bonus_Extra: "0",
-  // Testers
-  Contribuicoes_Tester: "0",
-  Tarefas: "0",
-  Verificacoes: "0",
-};
-const ID05 = {
-  Nome: "Gustavo",
-  Imagem: img+"05.png",
-  Pontos: "30",
-  Rank: "1",
-  Rank_Image: rank_1,
-  Pontos_Miticos: "0",
-  Elo: sem_elo,
-  Elo_Image: rank_0,
-  Destaque: sem,
-  Destaque_Image: destaque_0,
-  Fragmentos: 0,
-  Fragmentos_Estelares: 0,
-  Essencia_Mitica: 0,
-  Moedas: 0,
-  Parceria: "Nenhuma",
-  Cargo: mod,
-  Cargo_Image: mod_img,
-  Risco: vfalse,
-  Imune: vfalse,
-  Progresso: "0%",
-  // Divulgadores
-  Divulgacoes: "0",
-  Colaboracoes: "0",
-  Video: "0",
-  // Federativa
-  Contribuicoes_Federativa: "0",
-  Participacoes: "0",
-  Bonus_Extra: "0",
-  // Testers
-  Contribuicoes_Tester: "0",
-  Tarefas: "0",
-  Verificacoes: "0",
-};
-
+        localStorage.setItem("userdate", "Luckey");
+        localStorage.setItem("validate", "smodskins");
+        localStorage.setItem("data0", ID01.DiscordID);
+        localStorage.setItem("data1", ID01.Nome);
+        localStorage.setItem("data2", ID01.Imagem);
+        localStorage.setItem("data3", ID01.Pontos);
+        localStorage.setItem("data4", ID01.Rank);
+        localStorage.setItem("data5", ID01.Rank_Image);
+        localStorage.setItem("data6", ID01.Pontos_Miticos);
+        localStorage.setItem("data7", ID01.Elo);
+        localStorage.setItem("data8", ID01.Elo_Image);
+        localStorage.setItem("data9", ID01.Destaque);
+        localStorage.setItem("data10", ID01.Destaque_Image);
+        localStorage.setItem("data11", ID01.Fragmentos);
+        localStorage.setItem("data12", ID01.Fragmentos_Estelares);
+        localStorage.setItem("data13", ID01.Essencia_Mitica);
+        localStorage.setItem("data14", ID01.Moedas);
+        localStorage.setItem("data15", ID01.Parceria);
+        localStorage.setItem("data16", ID01.Cargo);
+        localStorage.setItem("data17", ID01.Cargo_Image);
+        localStorage.setItem("data18", ID01.Risco);
+        localStorage.setItem("data19", ID01.Imune);
+        localStorage.setItem("data20", ID01.Divulgacoes);
+        localStorage.setItem("data21", ID01.Colaboracoes);
+        localStorage.setItem("data22", ID01.Video);
+        localStorage.setItem("data23", ID01.Contribuicoes_Federativa);
+        localStorage.setItem("data24", ID01.Participacoes);
+        localStorage.setItem("data25", ID01.Bonus_Extra);
+        localStorage.setItem("data26", ID01.Contribuicoes_Tester);
+        localStorage.setItem("data27", ID01.Tarefas);
+        localStorage.setItem("data28", ID01.Verificacoes);
+        localStorage.setItem("data29", ID01.Progresso);
+        localStorage.setItem("data30", ID01.Nasceu);
+		localStorage.setItem("datap1", ID01.Obtido_recente);
+		localStorage.setItem("datap2", ID01.Obtido2);
+		localStorage.setItem("datap3", ID01.Obtido3);
+		localStorage.setItem("datap4", ID01.Obtido4);
+		localStorage.setItem("datap5", ID01.Obtido5);
+		localStorage.setItem("datap6", ID01.Obtido6);
+		localStorage.setItem("datap7", ID01.Obtido7);
+		localStorage.setItem("datab1", ID01.Bonus_recente);
+		localStorage.setItem("datab2", ID01.Bonus2);
+		localStorage.setItem("datab3", ID01.Bonus3);
+		localStorage.setItem("datab4", ID01.Bonus4);
+		localStorage.setItem("datab5", ID01.Bonus5);
+		localStorage.setItem("datab6", ID01.Bonus6);
+		localStorage.setItem("datab7", ID01.Bonus7);
+		localStorage.setItem("dataq1", ID01.Quantidade_recente);
+		localStorage.setItem("dataq2", ID01.Quantidade2);
+		localStorage.setItem("dataq3", ID01.Quantidade3);
+		localStorage.setItem("dataq4", ID01.Quantidade4);
+		localStorage.setItem("dataq5", ID01.Quantidade5);
+		localStorage.setItem("dataq6", ID01.Quantidade6);
+		localStorage.setItem("dataq7", ID01.Quantidade7);
 
 // Login //
 loginButton.addEventListener("click", (e) => {

@@ -45,10 +45,10 @@
             <li class="nav-style hidden Fed"><i class="fa fa-id-card-clip"></i> - Federativa</li>
 			<li class="dropdown open hidden Fed" id="fed3">
               <ul class="dropdown-menu">
-				<li><a class="nav-sub-style active" href=""><i class="fa fa-mug-saucer"></i> - Visão Geral</a></li>
-				<li><a class="nav-sub-style" href=""><i class="fa fa-headphones-simple"></i> - Reuniões</a></li>
-				<li><a class="nav-sub-style" href=""><i class="fa fa-users"></i> - Membros</a></li>
-				<li><a class="nav-sub-style" href=""><i class="fa fa-business-time"></i> - Atualizações</a></li>
+				<li><a class="nav-sub-style" href="./painel.html"><i class="fa fa-mug-saucer"></i> - Visão Geral</a></li>
+				<li><a class="nav-sub-style active" href="./reunioes.html"><i class="fa fa-headphones-simple"></i> - Reuniões</a></li>
+				<li><a class="nav-sub-style" href="./membros.html"><i class="fa fa-users"></i> - Membros</a></li>
+				<li><a class="nav-sub-style" href="./atualizacoes.html"><i class="fa fa-business-time"></i> - Atualizações</a></li>
               </ul>
             </li>
             <li class="nav-style hidden Tes"><i class="fa fa-gear"></i> - Testadores</li>
@@ -83,9 +83,9 @@
 
           <ul class="nav navbar-nav navbar-right navbar-user">
             <li class="dropdown user-dropdown">
-              <a class="dropdown-toggle btn-link" data-toggle="dropdown"><img src="../site/assets/users/02.png" height="18px"></img> L.S.P. UT BR <b class="caret"></b></a>
+              <a class="dropdown-toggle btn-link" data-toggle="dropdown"><img class="img-rounded mbs" src="" id="user_img" height="18px"></img> <span id="user"></span> <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="#"><i class="fa fa-user"></i> Perfil</a></li>
+                <li><a href="./perfil.html"><i class="fa fa-user"></i> Perfil</a></li>
                 <li class="divider"></li>
                 <li><a onclick="logout()" class="btn-link"><i class="fa fa-power-off"></i> Sair</a></li>
               </ul>
@@ -98,8 +98,8 @@
 
         <div class="row">
           <div class="col-lg-12">
-            <h1>Painel Principal </h1>
-			<h4 class="text-muted">Visão geral das estatísticas</h4>
+            <h1>Reuniões Gerais </h1>
+			<h4 class="text-muted">Calendario e Agendamentos de Reuniões da Federativa</h4>
             <ol class="breadcrumb">
               <li class="active"><i class="fa fa-id-card-clip"></i> Federativa</li>
             </ol>
@@ -107,115 +107,50 @@
         </div><!-- /.row -->
 
 		<div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-3">
             <div class="panel panel-primary">
               <div class="panel-heading">
-                <h3 class="panel-title"><i class="fa fa-clock"></i> Atualização ModSkin:</h3>
+                <h3 class="panel-title"><i class="fa fa-arrow-left"></i> Proxima:</h3>
               </div>
-              <div class="panel-body">
-			<div class="list-group"><a class="list-group-item">
-                 <p class="badge"><i class="fa fa-clock"></i> <span class="timeago" title="2022-07-28T20:00:00-03:00"></span></p>
-                 <i class="fa fa-file-zipper"></i> Versão 6.7.8 / Patch 12.14</a></div>
+              <div class="panel-body poro1">
+			<div class="list-group text-center"><b class="list-group-item tp-black" style="color: white">Nenhuma</b></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title"><i class="fa fa-mug-hot"></i> Em tempo real:</h3>
+              </div>
+              <div class="panel-body poro2">
+			<div class="list-group"><b class="list-group-item tp-black" style="color: white"></b></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title"> Anterior: <i class="fa fa-arrow-right"></i></h3>
+              </div>
+              <div class="panel-body poro1">
+			<div class="list-group text-center"><b class="list-group-item tp-black" style="color: white">27/04 - 22:00 ( GMT -3:00 / Horario de Brasilia )</b></div>
               </div>
             </div>
           </div>
         </div>
 
-		<div class="col-lg-12"> 
-            <div class="bs-example">
-              <div class="jumbotron text-center">
-                <h1>L.S.P. UT</h1>
-                <p>Veja tudo oque ocorre por aqui!</p>
-              </div>
-            </div>
-          </div>
-		  
-        <div class="row">
-          <div class="col-lg-4">
+		<div class="row">
+          <div class="col-lg-12">
             <div class="panel panel-primary">
               <div class="panel-heading">
-                <h3 class="panel-title"><i class="fa fa-check-to-slot"></i> Atividades recentes ( ModSkin )</h3>
+                <h3 class="panel-title"><i class="fa fa-quote-right"></i> Resumo da Reunião:</h3>
               </div>
-              <div class="panel-body">
-                <div class="list-group">
-                  <a class="list-group-item">
-                    <span class="badge timeago" title="2022-07-23T00:00:00-3:00"></span>
-                    <i class="fa fa-xmark"></i> Vazio
-                  </a>
-                  <a class="list-group-item">
-                    <span class="badge timeago" title="2022-07-23T00:00:00-3:00"></span>
-                    <i class="fa fa-xmark"></i> Vazio
-                  </a>
-                  <a class="list-group-item">
-                    <span class="badge timeago" title="2022-07-23T00:00:00-3:00"></span>
-                    <i class="fa fa-xmark"></i> Vazio
-                  </a>
-                  <a class="list-group-item">
-                    <span class="badge timeago" title="2022-07-23T00:00:00-3:00"></span>
-                    <i class="fa fa-xmark"></i> Vazio
-                  </a>
-                  <a class="list-group-item">
-                    <span class="badge timeago" title="2022-07-23T00:00:00-3:00"></span>
-                    <i class="fa fa-xmark"></i> Vazio
-                  </a>
-                  <a class="list-group-item">
-                    <span class="badge timeago" title="2022-07-23T00:00:00-3:00"></span>
-                    <i class="fa fa-xmark"></i> Vazio
-                  </a>
-                  <a class="list-group-item">
-                    <span class="badge timeago" title="2022-07-23T00:00:00-3:00"></span>
-                    <i class="fa fa-xmark"></i> Vazio
-                  </a>
-                  <a class="list-group-item">
-                    <span class="badge timeago" title="2022-07-23T00:00:00-3:00"></span>
-                    <i class="fa fa-xmark"></i> Vazio
-                  </a>
-                </div>
+              <div class="panel-body piltover">
+			<div class="list-group text-center"><b class="list-group-item tp-black" style="color: white;height: 400px;"> </b></div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="panel panel-primary">
-              <div class="panel-heading">
-                <h3 class="panel-title"><i class="fa fa-bars-progress"></i> Seu Progresso</h3>
-              </div>
-              <div class="panel-body bg-dark">
-                <div class="table-responsive">
-    			 <div class="row">
-                  <div class="col-xs-8">
-                    <img src="../site/assets/users/03.png" class="img-rounded img-bord" width="100px"></img>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <p class="announcement-heading" id="user_points">0</p>
-                    <p class="announcement-text">Pontuação</p>
-					<br><br>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <p class="announcement-heading" id="user_rank">0</p>
-                    <p class="announcement-text">Rank</p>
-                  </div>
-                 </div>
-    				<div class="progress progress-striped active">
-                        <div class="progress-bar progress-bar-warning" id="user_progress" style="width: 0%"></div>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="panel panel-primary">
-              <div class="panel-heading">
-                <h3 class="panel-title"><i class="fa fa-receipt"></i> Pontuação recentes</h3>
-              </div>
-              <div class="panel-body">
-                <div class="table-responsive">
-                  <table id="example" class="table table-bordered table-hover table-striped">
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!-- /.row -->
+        </div>
 
       </div><!-- /#page-wrapper -->
 
@@ -231,17 +166,14 @@
 	</script>
 	<script>
 	window.onload = function boards() {
-		const base3 = localStorage["data3"];
-		const base4 = localStorage["data4"];
+		const base1 = localStorage["data1"];
+		const base2 = localStorage["data2"];
 		const valir = localStorage["validate"];
-		console.log("Database 4: " + base4);
-		console.log("Database 3: " + base3);
 	if ( valir == null ) {
 	} else {
-		document.getElementById("user_progress").style.width = base3+"%";
-		document.getElementById("user_points").innerText = base3;
-		document.getElementById("user_rank").innerText = base4;
-		}
+		document.getElementById("user_img").src = base2;
+		document.getElementById("user").innerText = base1;
+	}
 	}
 	</script>
 	<script>
@@ -250,6 +182,7 @@
 		location.href = "login.html";
 	}
 	</script>
+	<script src="js/database/users.js" type="text/javascript"></script>
 	<script src="js/setTag.js" type="text/javascript"></script>
 	<script src="js/database.js" type="text/javascript"></script>
 

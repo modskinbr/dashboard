@@ -14,10 +14,340 @@ body {
   margin-top: 50px;
 }
 
+#wallp {
+    background-image: url(https://images.wallpapersden.com/image/download/heimerdinger-in-league-of-legends_a25lZ2aUmZqaraWkpJRnamtlrWZnbWU.jpg);
+    background-position: bottom;
+    border-radius: 25px;
+    border: 3px solid black;
+    background-repeat: no-repeat;
+    color: white;
+    background-size: cover;
+}
+
+.poro1 {
+	background-image: url(https://c4.wallpaperflare.com/wallpaper/621/754/384/legends-of-runeterra-league-of-legends-hd-wallpaper-preview.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    color: white;
+}
+
+.poro2 {
+	background-image: url(https://wallpapers.oceanofwallpapers.com/wallpapers/previews/wallpaper-9md361-596637-Preview.webp);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    color: white;
+}
+
+.piltover {
+	background-image: url(https://wallpapercave.com/wp/wp8595647.jpg);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+    color: white;
+}
+
+.tp-gray {
+	background: rgb(0 0 0 / 50%);
+    color: white;
+    border: 2px solid white;
+}
+
+.tp-black {
+	background: #000000e0;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin: 5px;
+	text-align: center;
+}
+.tp-black:hover {
+	text-decoration: none;
+	color: white;
+}
+.tp {
+	background: #000000e0;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin: 5px;
+}
+
+@media (min-width: 1200px) {
+
+  .col-xl-4 {
+    max-width: 33.33333%;
+    flex: 0 0 33.33333%;
+  }
+
+  .col-xl-6 {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+
+  .col-xl-8 {
+    max-width: 66.66667%;
+    flex: 0 0 66.66667%;
+  }
+
+  .order-xl-1 {
+    order: 1;
+  }
+
+  .order-xl-2 {
+    order: 2;
+  }
+}
+.col-4,
+.col-8,
+.col,
+.col-md-10,
+.col-md-12,
+.col-lg-3,
+.col-lg-4,
+.col-lg-6,
+.col-lg-7,
+.col-xl-4,
+.col-xl-6,
+.col-xl-8 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col {
+  max-width: 100%;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.col-4 {
+  max-width: 33.33333%;
+  flex: 0 0 33.33333%;
+}
+
+.col-8 {
+  max-width: 66.66667%;
+  flex: 0 0 66.66667%;
+}
+
+.shadow,
+.card-profile-image img {
+  box-shadow: 0 0 2rem 0 #0000004a !important;
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  border: 1px solid rgba(0, 0, 0, .05);
+  border-radius: .375rem;
+  background-color: #fff;
+  background-clip: border-box;
+}
+
+.card>hr {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.card-body {
+  padding: 1.5rem;
+  flex: 1 1 auto;
+}
+
+.card-header {
+  margin-bottom: 0;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, .05);
+  background-color: #fff;
+}
+
+.card-header:first-child {
+  border-radius: calc(.375rem - 1px) calc(.375rem - 1px) 0 0;
+}
+.card-profile-image {
+  position: relative;
+}
+
+.card-profile-image img {
+  position: absolute;
+  left: 50%;
+  max-width: 180px;
+  transition: all .15s ease;
+  transform: translate(-50%, 30%);
+  border-radius: 1.375rem;
+}
+
+.card-profile-stats {
+  padding: 1rem 0;
+}
+
+.card-profile-stats>div {
+  margin-right: 1rem;
+  padding: .875rem;
+  text-align: center;
+}
+
+.card-profile-stats>div:last-child {
+  margin-right: 0;
+}
+
+.card-profile-stats>div .heading {
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: block;
+  padding-top: 5px;
+}
+.bg-gradient-default {
+  background: linear-gradient(180deg, #00000000 0, #080808 100%) !important;
+}
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all .15s ease;
+}
+.opacity-8 {
+  opacity: .8 !important;
+}
+.align-items-center {
+    align-items: center !important;
+}
+.pt-lg-8 {
+    padding-top: 8rem !important;
+}
+.pb-8 {
+    padding-bottom: 8rem !important;
+}
+.card-profile-stats>div .description {
+  font-size: 1.5rem;
+  color: gray;
+}
+@media (min-width: 768px) {
+
+  .mt-md-5 {
+    margin-top: 3rem !important;
+  }
+
+  .pt-md-4 {
+    padding-top: 6.5rem !important;
+  }
+
+  .pb-md-4 {
+    padding-bottom: 1.5rem !important;
+  }
+}
+.tp:hover {
+	text-decoration: none;
+	color: white;
+}
+
+.border-25 { 
+	border: 2px solid black;
+    border-radius: 25px;
+}
+
+.row3 {
+	display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+    flex-wrap: wrap;
+}
+.justify-content-center {
+    justify-content: center !important;
+}
+
+.d-flex {
+    display: flex !important;
+}
+.font-weight-light {
+    font-weight: 300 !important;
+}
+.bg-secondary {
+    background-color: #f7fafc !important;
+}
+.item {
+	position: relative;
+    display: block;
+    padding: 10px 5px;
+	border-radius: 15px;
+}
+@media (min-width: 992px)
+.pl-lg-4 {
+    padding-left: 1.5rem !important;
+}
+@media (min-width: 992px) {
+
+  .col-lg-3 {
+    max-width: 25%;
+    flex: 0 0 25%;
+  }
+
+  .col-lg-4 {
+    max-width: 33.33333%;
+    flex: 0 0 33.33333%;
+  }
+
+  .col-lg-6 {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+
+  .col-lg-7 {
+    max-width: 58.33333%;
+    flex: 0 0 58.33333%;
+  }
+
+  .order-lg-2 {
+    order: 2;
+  }
+}
 #wrapper {
   padding-left: 0;
 }
 
+.focused .form-control {
+    border-color: rgba(50, 151, 211, .25);
+}
+.focused .form-control {
+}
+.form-control-alternative {
+    /* transition: box-shadow .15s ease; */
+    /* border: 0; */
+    box-shadow: 0 1px 3px rgb(50 50 93 / 15%), 0 1px 0 rgb(0 0 0 / 2%);
+}
+.form-control {
+    font-size: .875rem;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555555;
+    vertical-align: middle;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+}
 #page-wrapper {
   width: 100%;
   padding: 5px 15px;
@@ -100,15 +430,16 @@ table.tablesorter thead tr th:hover {
 
   .side-nav {
 	margin-left: -225px;
-	left: 225px;
-	width: 225px;
-	position: fixed;
-	top: 50px;
-	height: 100%;
-	border-radius: 0;
-	border: none;
-	background-color: #222222;
-	overflow-y: auto;
+    left: 225px;
+    width: 225px;
+    position: fixed;
+    top: 50px;
+    height: -webkit-fill-available;
+    border-radius: 0;
+    border: none;
+    background-color: #222222;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   /* Bootstrap Default Overrides - Customized Dropdowns for the Side Nav */
@@ -129,6 +460,16 @@ table.tablesorter thead tr th:hover {
 	color: #999999;
 	padding: 15px 15px 15px 25px;
   }
+  
+.not {
+	width: 157px;
+    display: block;
+    padding: 1px;
+    background-color: #ff6868;
+    border-radius: 100%;
+    margin-top: 4px;
+    position: absolute;
+}
 
   .side-nav>li.dropdown>ul.dropdown-menu>li>a:hover,
   .side-nav>li.dropdown>ul.dropdown-menu>li>a.active,

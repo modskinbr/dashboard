@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Painel Principal</title>
+    <link rel="icon" type="image/x-icon" href="assets/logos/favicon.ico" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="https://modskinbr.github.io/L.S.P.-UT/js/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="https://modskinbr.github.io/L.S.P.-UT/js/update-time.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+        jQuery("span.timeago").timeago();
+       });
+    </script>
+
+    <!-- Add custom CSS here -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://modskinbr.github.io/L.S.P.-UT/font-awesome/css/all.css">
+  </head>
+
+  <body id="body">
+
+    <div id="wrapper">
+
+      <!-- Sidebar -->
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand">Painel da Federativa</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav side-nav">
+            <li class="nav-style hidden Fed"><i class="fa fa-id-card-clip"></i> - Federativa</li>
+			<li class="dropdown open hidden Fed" id="fed3">
+              <ul class="dropdown-menu">
+				<li><a class="nav-sub-style" href="./painel.html"><i class="fa fa-mug-saucer"></i> - Visão Geral</a></li>
+				<li><a class="nav-sub-style" href="./reunioes.html"><i class="fa fa-headphones-simple"></i> - Reuniões</a></li>
+				<li><a class="nav-sub-style active" href="./membros.html"><i class="fa fa-users"></i> - Membros <span class=""><span></span></span></a></li>
+				<li><a class="nav-sub-style" href="./atualizacoes.html"><i class="fa fa-business-time"></i> - Atualizações</a></li>
+              </ul>
+            </li>
+            <li class="nav-style hidden Tes"><i class="fa fa-gear"></i> - Testadores</li>
+			<li class="dropdown open hidden Tes">
+              <ul class="dropdown-menu">
+				<li><a class="nav-sub-style" href=""><i class="fa fa-list-check"></i> - Tarefas</a></li>
+				<li><a class="nav-sub-style" href=""><i class="fa fa-feather-pointed"></i> - Campeoes</a></li>
+				<li><a class="nav-sub-style" href=""><i class="fa fa-database"></i> - Lançamentos</a></li>
+				<li><a class="nav-sub-style" href=""><i class="fa fa-check-double"></i> - Verificaçoes</a></li>
+              </ul>
+            </li>
+            <li class="nav-style hidden Acad"><i class="fa fa-school"></i> - Academia</li>
+			<li class="dropdown open hidden Acad">
+              <ul class="dropdown-menu">
+				<li><a class="nav-sub-style" href=""><i class="fa fa-highlighter"></i> - Divulgações</a></li>
+				<li><a class="nav-sub-style" href=""><i class="fa fa-align-center"></i> - Conteudos</a></li>
+				<li><a class="nav-sub-style" href=""><i class="fa fa-share-nodes"></i> - Plataformas</a></li>
+              </ul>
+            </li>
+            <li class="nav-style hidden Cont"><i class="fa fa-handshake"></i> - Contratação</li>
+			<li class="dropdown open hidden Cont">
+              <ul class="dropdown-menu">
+				<li>
+				<a class="nav-sub-style" href=""><i class="fa fa-street-view"></i> - Contratar</a></li>
+				<li>
+				<a class="nav-sub-style" href=""><i class="fa fa-graduation-cap"></i> - Aprender</a></li>
+				<li>
+				<a class="nav-sub-style" href=""><i class="fa fa-table-list"></i> - Relatorios</a></li>
+              </ul>
+            </li>
+			</ul>
+
+          <ul class="nav navbar-nav navbar-right navbar-user">
+            <li class="dropdown user-dropdown">
+              <a class="dropdown-toggle btn-link" data-toggle="dropdown"><img class="img-rounded mbs" src="" id="user_img" height="18px"></img> <span id="user"></span> <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="./perfil.html"><i class="fa fa-user"></i> Perfil</a></li>
+                <li class="divider"></li>
+                <li><a onclick="logout()" class="btn-link"><i class="fa fa-power-off"></i> Sair</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+
+      <div id="page-wrapper">
+
+        <div class="row">
+          <div class="col-lg-12">
+            <h1>Membros da Corporação </h1>
+			<h4 class="text-muted">Veja todos os membros da L.S.P. UT e novos!</h4>
+            <ol class="breadcrumb">
+              <li class="active"><i class="fa fa-id-card-clip"></i> Federativa</li>
+            </ol>
+          </div>
+        </div><!-- /.row -->
+
+		<div class="row">
+          <div class="col-lg-2">
+            <div class="panel panel-primary" id="ID01" >
+              <div class="panel-heading">
+				<span id="tID01" ></span>
+              </div>
+              <div class="panel-body">
+				<div><img src="" id="img1" height="206.49" width="100%" class="border-25"><a class="tp-black">@Luckey - <img src="" id="dest1" height="24" width="24" ></img></a></img></div>
+    			<div><b class="item tp-gray" style="color: white"><img src="" class="porinho" height="24" width="24" ></img> - Nome: <span id="nome1"></span> </b></div>
+    			<div><b class="item tp-gray" style="color: white"><img src="" id="rankimg1" height="24" width="24" ></img> - Ranking: <span id="rank1"></span> </b></div>
+    			<div><b class="item tp-gray" style="color: white"><span><img src="" id="eloimg1" height="24" width="24" ></img></span> - Elo: <span id="elo1"></span> </b></div>
+    			<div><b class="item tp-gray" style="color: white"><span><img src="" id="cargoimg1" height="24" width="24" ></img></span> - Cargo: <span id="cargo1"></span> </b></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="panel panel-primary" id="ID02" >
+              <div class="panel-heading">
+				<span id="tID02" ></span>
+              </div>
+              <div class="panel-body">
+				<div><img src="" id="img2" height="206.49" width="100%" class="border-25"><a class="tp-black">@Bruch - <img src="" id="dest2" height="24" width="24" ></img></a></img></div>
+    			<div><b class="item tp-gray" style="color: white"><img src="" class="porinho" height="24" width="24" ></img> - Nome: <span id="nome2"></span> </b></div>
+    			<div><b class="item tp-gray" style="color: white"><img src="" id="rankimg2" height="24" width="24" ></img> - Ranking: <span id="rank2"></span> </b></div>
+    			<div><b class="item tp-gray" style="color: white"><span><img src="" id="eloimg2" height="24" width="24" ></img></span> - Elo: <span id="elo2"></span> </b></div>
+    			<div><b class="item tp-gray" style="color: white"><span><img src="" id="cargoimg2" height="24" width="24" ></img></span> - Cargo: <span id="cargo2"></span> </b></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="panel panel-primary" id="ID03" >
+              <div class="panel-heading">
+				<span id="tID03" ></span>
+              </div>
+              <div class="panel-body">
+				<div><img src="" id="img3" height="206.49" width="100%" class="border-25"><a class="tp-black">@Khyago - <img src="" id="dest3" height="24" width="24" ></img></a></img></div>
+    			<div><b class="item tp-gray" style="color: white"><img src="" class="porinho" height="24" width="24" ></img> - Nome: <span id="nome3"></span> </b></div>
+    			<div><b class="item tp-gray" style="color: white"><img src="" id="rankimg3" height="24" width="24" ></img> - Ranking: <span id="rank3"></span> </b></div>
+    			<div><b class="item tp-gray" style="color: white"><span><img src="" id="eloimg3" height="24" width="24" ></img></span> - Elo: <span id="elo3"></span> </b></div>
+    			<div><b class="item tp-gray" style="color: white"><span><img src="" id="cargoimg3" height="24" width="24" ></img></span> - Cargo: <span id="cargo3"></span> </b></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="panel panel-primary" id="ID04" >
+              <div class="panel-heading">
+				<span id="tID04" ></span>
+              </div>
+              <div class="panel-body">
+				<div><img src="" id="img4" height="206.49" width="100%" class="border-25"><a class="tp-black">@TaikunX3 - <img src="" id="dest4" height="24" width="24" ></img></a></img></div>
+    			<div><b class="item tp-gray" style="color: white"><img src="" class="porinho" height="24" width="24" ></img> - Nome: <span id="nome4"></span> </b></div>
+    			<div><b class="item tp-gray" style="color: white"><img src="" id="rankimg4" height="24" width="24" ></img> - Ranking: <span id="rank4"></span> </b></div>
+    			<div><b class="item tp-gray" style="color: white"><span><img src="" id="eloimg4" height="24" width="24" ></img></span> - Elo: <span id="elo4"></span> </b></div>
+    			<div><b class="item tp-gray" style="color: white"><span><img src="" id="cargoimg4" height="24" width="24" ></img></span> - Cargo: <span id="cargo4"></span> </b></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="panel panel-primary" id="ID05" >
+              <div class="panel-heading">
+				<span id="tID05" ></span>
+              </div>
+              <div class="panel-body">
+				<div><img src="" id="img5" height="206.49" width="100%" class="border-25"><a class="tp-black">@hattug - <img src="" id="dest5" height="24" width="24" ></img></a></img></div>
+    			<div><b class="item tp-gray" style="color: white"><img src="" class="porinho" height="24" width="24" ></img> - Nome: <span id="nome5"></span> </b></div>
+    			<div><b class="item tp-gray" style="color: white"><img src="" id="rankimg5" height="24" width="24" ></img> - Ranking: <span id="rank5"></span> </b></div>
+    			<div><b class="item tp-gray" style="color: white"><span><img src="" id="eloimg5" height="24" width="24" ></img></span> - Elo: <span id="elo5"></span> </b></div>
+    			<div><b class="item tp-gray" style="color: white"><span><img src="" id="cargoimg5" height="24" width="24" ></img></span> - Cargo: <span id="cargo5"></span> </b></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- /#page-wrapper -->
+
+    </div><!-- /#wrapper -->
+
+    <!-- JavaScript -->
+    <script src="https://learning-zone.github.io/website-templates/sb-admin/js/bootstrap.js"></script>
+	<script>
+	function loadTag() {
+		localStorage["data16"];
+	}	
+	loadTag();
+	</script>
+	<script>
+	window.onload = function boards() {
+		const base1 = localStorage["data1"];
+		const base2 = localStorage["data2"];
+		const valir = localStorage["validate"];
+	if ( valir == null ) {
+	} else {
+		// ID01
+		document.getElementById("img1").src = ID01.Imagem;
+		document.getElementById("cargoimg1").src = ID01.Cargo_Image;
+		document.getElementById("rankimg1").src = ID01.Rank_Image;
+		document.getElementById("nome1").innerText = ID01.Nome;
+		document.getElementById("rank1").innerText = ID01.Rank;
+		document.getElementById("elo1").innerText = ID01.Elo;
+		document.getElementById("eloimg1").src = ID01.Elo_Image;
+		document.getElementById("cargo1").innerText = ID01.Cargo;
+		document.getElementById("dest1").src = ID01.Destaque_Image;
+
+		// ID02
+		document.getElementById("img2").src = ID02.Imagem;
+		document.getElementById("cargoimg2").src = ID02.Cargo_Image;
+		document.getElementById("rankimg2").src = ID02.Rank_Image;
+		document.getElementById("nome2").innerText = ID02.Nome;
+		document.getElementById("rank2").innerText = ID02.Rank;
+		document.getElementById("elo2").innerText = ID02.Elo;
+		document.getElementById("eloimg2").src = ID02.Elo_Image;
+		document.getElementById("cargo2").innerText = ID02.Cargo;
+		document.getElementById("dest2").src = ID02.Destaque_Image;
+
+		// ID03
+		document.getElementById("img3").src = ID03.Imagem;
+		document.getElementById("cargoimg3").src = ID03.Cargo_Image;
+		document.getElementById("rankimg3").src = ID03.Rank_Image;
+		document.getElementById("nome3").innerText = ID03.Nome;
+		document.getElementById("rank3").innerText = ID03.Rank;
+		document.getElementById("elo3").innerText = ID03.Elo;
+		document.getElementById("eloimg3").src = ID03.Elo_Image;
+		document.getElementById("cargo3").innerText = ID03.Cargo;
+		document.getElementById("dest3").src = ID03.Destaque_Image;
+
+		// ID04
+		document.getElementById("img4").src = ID04.Imagem;
+		document.getElementById("cargoimg4").src = ID04.Cargo_Image;
+		document.getElementById("rankimg4").src = ID04.Rank_Image;
+		document.getElementById("nome4").innerText = ID04.Nome;
+		document.getElementById("rank4").innerText = ID04.Rank;
+		document.getElementById("elo4").innerText = ID04.Elo;
+		document.getElementById("eloimg4").src = ID04.Elo_Image;
+		document.getElementById("cargo4").innerText = ID04.Cargo;
+		document.getElementById("dest4").src = ID04.Destaque_Image;
+
+		// ID05
+		document.getElementById("img5").src = ID05.Imagem;
+		document.getElementById("cargoimg5").src = ID05.Cargo_Image;
+		document.getElementById("rankimg5").src = ID05.Rank_Image;
+		document.getElementById("nome5").innerText = ID05.Nome;
+		document.getElementById("rank5").innerText = ID05.Rank;
+		document.getElementById("elo5").innerText = ID05.Elo;
+		document.getElementById("eloimg5").src = ID05.Elo_Image;
+		document.getElementById("cargo5").innerText = ID05.Cargo;
+		document.getElementById("dest5").src = ID05.Destaque_Image;
+		
+		// ID06
+		//document.getElementById("img6").src = ID06.Imagem;
+		//document.getElementById("cargoimg6").src = ID06.Cargo_Image;
+		//document.getElementById("rankimg6").src = ID06.Rank_Image;
+		//document.getElementById("nome6").innerText = ID06.Nome;
+		//document.getElementById("rank6").innerText = ID06.Rank;
+		//document.getElementById("elo6").innerText = ID06.Elo;
+		//document.getElementById("eloimg6").src = ID06.Elo_Image;
+		//document.getElementById("cargo6").innerText = ID06.Cargo;
+		//document.getElementById("dest6").src = ID06.Destaque_Image;
+
+		// User Logged
+		document.getElementById("user_img").src = base2;
+		document.getElementById("user").innerText = base1;
+
+		// Script
+		var ac = document.getElementsByClassName("porinho");
+		for (var i = 0; i < ac.length; i+= 1) {
+			ac[i].src = porinho;
+		}
+	}
+}
+	</script>
+	<script>
+	function logout() {
+		localStorage.clear();
+		location.href = "login.html";
+	}
+	</script>
+	<script src="js/database/users.js" type="text/javascript"></script>
+	<script src="js/setTag.js" type="text/javascript"></script>
+	<script src="js/database.js" type="text/javascript"></script>
+
+    <!-- Page Specific Plugins -->
+	<script src="js/tableedit.js" type="text/javascript"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+
+ 
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="br">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Painel Principal</title>
+      <link rel="icon" type="image/x-icon" href="assets/logos/favicon.ico" />
+      <!-- Bootstrap core CSS -->
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <script src="https://modskinbr.github.io/L.S.P.-UT/js/jquery-3.6.0.min.js" type="text/javascript"></script>
+      <!-- Add custom CSS here -->
+      <link href="css/style.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://modskinbr.github.io/L.S.P.-UT/font-awesome/css/all.css">
+   </head>
+   <body id="body" style="height: 100%; background-image: url(https://i.pinimg.com/originals/91/ed/07/91ed0743df7f1d99322fa1d222ee2cf3.png); background-size: cover; background-position: center top;">
+      <div id="wrapper">
+      <!-- Sidebar -->
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+         <!-- Brand and toggle get grouped for better mobile display -->
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand">Painel da Federativa</a>
+         </div>
+         <!-- Collect the nav links, forms, and other content for toggling -->
+         <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav side-nav">
+               <li class="nav-style hidden Fed"><i class="fa fa-id-card-clip"></i> - Federativa</li>
+               <li class="dropdown open hidden Fed" id="fed3">
+                  <ul class="dropdown-menu">
+                     <li><a class="nav-sub-style" href="./painel.html"><i class="fa fa-mug-saucer"></i> - Visão Geral</a></li>
+                     <li><a class="nav-sub-style" href="./reunioes.html"><i class="fa fa-headphones-simple"></i> - Reuniões</a></li>
+                     <li><a class="nav-sub-style" href="./membros.html"><i class="fa fa-users"></i> - Membros</a></li>
+                     <li><a class="nav-sub-style" href="./atualizacoes.html"><i class="fa fa-business-time"></i> - Atualizações</a></li>
+                  </ul>
+               </li>
+               <li class="nav-style hidden Tes"><i class="fa fa-gear"></i> - Testadores</li>
+               <li class="dropdown open hidden Tes">
+                  <ul class="dropdown-menu">
+                     <li><a class="nav-sub-style" href=""><i class="fa fa-list-check"></i> - Tarefas</a></li>
+                     <li><a class="nav-sub-style" href=""><i class="fa fa-feather-pointed"></i> - Campeoes</a></li>
+                     <li><a class="nav-sub-style" href=""><i class="fa fa-database"></i> - Lançamentos</a></li>
+                     <li><a class="nav-sub-style" href=""><i class="fa fa-check-double"></i> - Verificaçoes</a></li>
+                  </ul>
+               </li>
+               <li class="nav-style hidden Acad"><i class="fa fa-school"></i> - Academia</li>
+               <li class="dropdown open hidden Acad">
+                  <ul class="dropdown-menu">
+                     <li><a class="nav-sub-style" href=""><i class="fa fa-highlighter"></i> - Divulgações</a></li>
+                     <li><a class="nav-sub-style" href=""><i class="fa fa-align-center"></i> - Conteudos</a></li>
+                     <li><a class="nav-sub-style" href=""><i class="fa fa-share-nodes"></i> - Plataformas</a></li>
+                  </ul>
+               </li>
+               <li class="nav-style hidden Cont"><i class="fa fa-handshake"></i> - Contratação</li>
+               <li class="dropdown open hidden Cont">
+                  <ul class="dropdown-menu">
+                     <li>
+                        <a class="nav-sub-style" href=""><i class="fa fa-street-view"></i> - Contratar</a>
+                     </li>
+                     <li>
+                        <a class="nav-sub-style" href=""><i class="fa fa-graduation-cap"></i> - Aprender</a>
+                     </li>
+                     <li>
+                        <a class="nav-sub-style" href=""><i class="fa fa-table-list"></i> - Relatorios</a>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right navbar-user">
+               <li class="dropdown user-dropdown">
+                  <a class="dropdown-toggle btn-link" data-toggle="dropdown"><img class="img-rounded mbs" src="" id="user_img" height="18px"></img> <span id="user"></span> <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                     <li><a href="./perfil.html"><i class="fa fa-user"></i> Perfil</a></li>
+                     <li class="divider"></li>
+                     <li><a onclick="logout()" class="btn-link"><i class="fa fa-power-off"></i> Sair</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         <!-- /.navbar-collapse -->
+      </nav>
+    <div class="pt-lg-8 d-flex align-items-center">
+      <!-- Mask -->
+      <span class="mask bg-gradient-default opacity-8"></span>
+      <div id="page-wrapper">
+         <div class="row">
+            <div class="col-lg-12">
+                        <div class="row3">
+                           <div class="col-xl-4 order-xl-2">
+                              <div class="card card-profile shadow">
+                                 <div class="row3 justify-content-center">
+                                    <div class="col-lg-3 order-lg-2">
+                                       <div class="card-profile-image">
+                                          <img src="" id="userimg" height="64px" class="rounded-circle">
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="card-body pt-0 pt-md-4">
+                                    <div class="row3">
+                                       <div class="col">
+                                          <div class="card-profile-stats d-flex justify-content-center mt-md-5">
+                                             <div>
+                                                <span class="heading" id="pontos">0</span>
+                                                <span class="description">Pontos</span>
+                                             </div>
+                                             <div>
+                                                <span class="heading" id="progresso">0</span>
+                                                <span class="description">Progresso</span>
+                                             </div>
+                                             <div>
+                                                <span class="heading" id="ranking">0</span>
+                                                <span class="description">Ranking</span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="text-center">
+                                       <h3>
+                                          <span id="name"></span>, <span id="idade" class="font-weight-light"></span>
+                                       </h3>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-xl-8 order-xl-1">
+                              <div class="card bg-secondary shadow">
+                                 <div class="card-header bg-white border-0">
+                                    <div class="row3 align-items-center">
+                                       <div class="col-8">
+                                          <h3 class="mb-0">Minha conta</h3>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="card-body">
+                                    <form>
+                                       <h6 class="heading-small text-muted mb-4">Info do usuario</h6>
+                                       <div class="pl-lg-4">
+                                          <div class="row3">
+                                             <div class="col-lg-6">
+                                                <div class="form-group">
+                                                   <label class="form-control-label" for="input-username">Discord</label>
+                                                   <p id="input-username" class="form-control form-control-alternative"></p>
+                                                </div>
+                                             </div>
+                                             <div class="col-lg-6">
+                                                <div class="form-group">
+                                                   <label class="form-control-label" for="input-first-name">Nome</label>
+                                                   <p id="input-first-name" class="form-control form-control-alternative"></p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <hr class="my-4">
+                                       <h6 class="heading-small text-muted mb-4">Status do usuario</h6>
+                                       <div class="pl-lg-4">
+                                       <div class="col">
+                                          <div class="card-profile-stats d-flex justify-content-center mt-md-5">
+                                             <div>
+                                                <span class="badge" id="pontos2" ></span>
+                                                <span class="heading"><img src="./assets/database/Pontos_Prestigios.png" title="Pontos de Prestigio" height="30" class="border-25"></img></span>
+                                             </div>
+                                             <div>
+                                                <span class="badge" id="rank" ></span>
+                                                <span class="heading"><img src="" id="rankimg" title="Rank" height="30" class="border-25"></img></span>
+                                             </div>
+                                             <div>
+                                                <span class="badge" id="p_m" >0</span>
+                                                <span class="heading"><img src="./assets/database/Pontos_Miticos.png" title="Pontos Miticos" height="30" class="border-25"></img></span>
+                                             </div>
+                                             <div>
+                                                <span class="badge" id="elo" >Sem Elo</span>
+                                                <span class="heading"><img src="" id="eloimg" title="Elo" height="30" class="border-25"></img></span>
+                                             </div>
+                                             <div>
+                                                <span class="badge" id="dest" >0</span>
+                                                <span class="heading"><img src="" id="destimg" title="Destaques" height="30" class="border-25"></img></span>
+                                             </div>
+                                             <div>
+                                                <span class="badge" id="shards" >0</span>
+                                                <span class="heading"><img src="./assets/database/Shards.png" title="Fragmentos" height="30" class="border-25"></img></span>
+                                             </div>
+                                             <div>
+                                                <span class="badge" id="sshards" >0</span>
+                                                <span class="heading"><img src="./assets/database/Star_Shards.png" title="Fragmentos Estelares" height="30" class="border-25"></img></span>
+                                             </div>
+                                             <div>
+                                                <span class="badge" id="e_m" >0</span>
+                                                <span class="heading"><img src="./assets/database/Essencia_Mitica.png" title="Essencia Mitica" height="30" class="border-25"></img></span>
+                                             </div>
+                                             <div>
+                                                <span class="badge" id="moedas" >0</span>
+                                                <span class="heading"><img src="./assets/database/Moedas.png" title="Moedas Lisputianas" height="30" class="border-25"></img></span>
+                                             </div>
+                                             <div>
+                                                <span class="badge" id="parceiro" >Nenhum</span>
+                                                <span class="heading"><img src="./assets/database/Parceiro.png" title="Parceria" height="30" class="border-25"></img></span>
+                                             </div>
+                                             <div>
+                                                <span class="badge" id="cargo" ></span>
+                                                <span class="heading"><img src="" title="Cargo possuido" id="cargoimg" height="30" class="border-25"></img></span>
+                                             </div>
+                                          </div>
+                                       </div>
+											<div class="progress progress-striped active">
+												<div class="progress-bar" style="width: 0%" id="progressbar"></div>
+											</div>
+										</div>
+                                    </form>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- /#page-wrapper -->
+      </div>
+      <!-- /#wrapper -->
+      <!-- JavaScript -->
+      <script src="https://learning-zone.github.io/website-templates/sb-admin/js/bootstrap.js"></script>
+      <script>
+         function loadTag() {
+         	localStorage["data16"];
+         }	
+         loadTag();
+      </script>
+      <script>
+         window.onload = function boards() {
+			const discord = localStorage["data0"];
+         	const base1 = localStorage["data1"];
+         	const base2 = localStorage["data2"];
+         	const base3 = localStorage["data3"];
+         	const base4 = localStorage["data4"];
+         	const base5 = localStorage["data5"];
+         	const base6 = localStorage["data6"];
+         	const base7 = localStorage["data7"];
+         	const base8 = localStorage["data8"];
+         	const base9 = localStorage["data9"];
+         	const base10 = localStorage["data10"];
+         	const base16 = localStorage["data16"];
+         	const base17 = localStorage["data17"];
+			const base29 = localStorage["data29"];
+			const base30 = localStorage["data30"];
+         	const valir = localStorage["validate"];
+			const userdate = localStorage["userdate"];
+         if ( valir == null ) {
+         } else {
+			// Discord
+			document.getElementById("input-username").innerText = discord;
+			// Nome
+         	document.getElementById("user").innerText = base1;
+         	document.getElementById("input-first-name").innerText = base1;
+			// Imagem
+         	document.getElementById("user_img").src = base2;
+         	document.getElementById("userimg").src = base2;
+			// Pontuação
+         	document.getElementById("pontos").innerText = base3;
+         	document.getElementById("pontos2").innerText = base3;
+			// Rank
+         	document.getElementById("rank").innerText = base4;
+         	document.getElementById("rankimg").src = base5;
+			// Pontos Miticos
+         	document.getElementById("p_m").innerText = base6;
+			// Elo
+         	document.getElementById("elo").innerText = base7;
+         	document.getElementById("eloimg").src = base8;
+			// Destaques
+         	document.getElementById("dest").innerText = base9;
+         	document.getElementById("destimg").src = base10;
+			// Progresso
+			document.getElementById("progressbar").style = "width: "+base29;
+			document.getElementById("progresso").innerText = base29;
+			// Nome logado
+			document.getElementById("name").innerText = userdate;
+			// Cargo & Imagem
+			document.getElementById("cargo").innerText = base16;
+			document.getElementById("cargoimg").src = base17;
+			// Idade
+			var years = new Date(new Date() - new Date(base30)).getFullYear() - 1970;
+			document.getElementById("idade").innerText = years+" anos";
+         }
+         }
+      </script>
+      <script>
+         function logout() {
+         	localStorage.clear();
+         	location.href = "login.html";
+         }
+      </script>
+      <script src="js/database/users.js" type="text/javascript"></script>
+      <script src="js/setTag.js" type="text/javascript"></script>
+      <script src="js/database.js" type="text/javascript"></script>
+      <!-- Page Specific Plugins -->
+      <script src="js/tableedit.js" type="text/javascript"></script>
+      <script src="js/jquery.dataTables.min.js"></script>
+   </body>
+</html>
