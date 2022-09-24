@@ -210,3 +210,49 @@ const ID03 = {
   Obtido7: "" , Bonus7: "" , Quantidade7: "",
   ////
 };
+const ID04 = {
+  DiscordID: "ScörpioSCRP#6353",
+  Nasceu: "2004",
+  Nome: "Gabriel",
+  // hattsug
+  Imagem: img+"Gabriel"+type1,
+  Pontos: "30",
+  Rank: "1",
+  Rank_Image: rank_1,
+  Pontos_Miticos: "0",
+  Elo: sem_elo,
+  Elo_Image: rank_0,
+  Destaque: sem,
+  Destaque_Image: destaque_0,
+  Fragmentos: 0,
+  Fragmentos_Estelares: 0,
+  Essencia_Mitica: 0,
+  Moedas: 0,
+  Parceria: "Nenhuma",
+  Cargo: designer,
+  Cargo_Image: designer_img,
+  Risco: vfalse,
+  Imune: vtrue,
+  Reputacao: "100%",
+  // Divulgadores
+  Divulgacoes: "0",
+  Colaboracoes: "0",
+  Video: "0",
+  // Federativa
+  Contribuicoes_Federativa: "0",
+  Participacoes: "0",
+  Bonus_Extra: "0",
+  // Testers
+  Contribuicoes_Tester: "0",
+  Tarefas: "0",
+  Verificacoes: "0",
+  // RELATORIO DE PONTUAÇÃO //
+  Obtido_recente: "Primeiro Login" , Bonus_recente: "1% - 5" , Quantidade_recente: "30",
+  Obtido2: "" , Bonus2: "" , Quantidade2: "",
+  Obtido3: "" , Bonus3: "" , Quantidade3: "",
+  Obtido4: "" , Bonus4: "" , Quantidade4: "",
+  Obtido5: "" , Bonus5: "" , Quantidade5: "",
+  Obtido6: "" , Bonus6: "" , Quantidade6: "",
+  Obtido7: "" , Bonus7: "" , Quantidade7: "",
+  ////
+};

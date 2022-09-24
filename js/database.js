@@ -126,8 +126,65 @@ loginButton.addEventListener("click", (e) => {
 		localStorage.setItem("dataq7", ID03.Quantidade7);
         location.href = urlhref;
     } 
+    else if (username == "Scorpio" && password == "LSGSaHikoUPT") {
+        localStorage.setItem("userdate", username );
+        localStorage.setItem("validate", password );
+        localStorage.setItem("data0", ID04.DiscordID);
+        localStorage.setItem("data1", ID04.Nome);
+        localStorage.setItem("data2", ID04.Imagem);
+        localStorage.setItem("data3", ID04.Pontos);
+        localStorage.setItem("data4", ID04.Rank);
+        localStorage.setItem("data5", ID04.Rank_Image);
+        localStorage.setItem("data6", ID04.Pontos_Miticos);
+        localStorage.setItem("data7", ID04.Elo);
+        localStorage.setItem("data8", ID04.Elo_Image);
+        localStorage.setItem("data9", ID04.Destaque);
+        localStorage.setItem("data10", ID04.Destaque_Image);
+        localStorage.setItem("data11", ID04.Fragmentos);
+        localStorage.setItem("data12", ID04.Fragmentos_Estelares);
+        localStorage.setItem("data13", ID04.Essencia_Mitica);
+        localStorage.setItem("data14", ID04.Moedas);
+        localStorage.setItem("data15", ID04.Parceria);
+        localStorage.setItem("data16", ID04.Cargo);
+        localStorage.setItem("data17", ID04.Cargo_Image);
+        localStorage.setItem("data18", ID04.Risco);
+        localStorage.setItem("data19", ID04.Imune);
+        localStorage.setItem("data20", ID04.Divulgacoes);
+        localStorage.setItem("data21", ID04.Colaboracoes);
+        localStorage.setItem("data22", ID04.Video);
+        localStorage.setItem("data23", ID04.Contribuicoes_Federativa);
+        localStorage.setItem("data24", ID04.Participacoes);
+        localStorage.setItem("data25", ID04.Bonus_Extra);
+        localStorage.setItem("data26", ID04.Contribuicoes_Tester);
+        localStorage.setItem("data27", ID04.Tarefas);
+        localStorage.setItem("data28", ID04.Verificacoes);
+        localStorage.setItem("data29", ID04.Reputacao);
+        localStorage.setItem("data30", ID04.Nasceu);
+		localStorage.setItem("datap1", ID04.Obtido_recente);
+		localStorage.setItem("datap2", ID04.Obtido2);
+		localStorage.setItem("datap3", ID04.Obtido3);
+		localStorage.setItem("datap4", ID04.Obtido4);
+		localStorage.setItem("datap5", ID04.Obtido5);
+		localStorage.setItem("datap6", ID04.Obtido6);
+		localStorage.setItem("datap7", ID04.Obtido7);
+		localStorage.setItem("datab1", ID04.Bonus_recente);
+		localStorage.setItem("datab2", ID04.Bonus2);
+		localStorage.setItem("datab3", ID04.Bonus3);
+		localStorage.setItem("datab4", ID04.Bonus4);
+		localStorage.setItem("datab5", ID04.Bonus5);
+		localStorage.setItem("datab6", ID04.Bonus6);
+		localStorage.setItem("datab7", ID04.Bonus7);
+		localStorage.setItem("dataq1", ID04.Quantidade_recente);
+		localStorage.setItem("dataq2", ID04.Quantidade2);
+		localStorage.setItem("dataq3", ID04.Quantidade3);
+		localStorage.setItem("dataq4", ID04.Quantidade4);
+		localStorage.setItem("dataq5", ID04.Quantidade5);
+		localStorage.setItem("dataq6", ID04.Quantidade6);
+		localStorage.setItem("dataq7", ID04.Quantidade7);
+        location.href = urlhref;
+    } 
     else {
-        loginErrorMsg.style.opacity = 1;
+        alert("Senha e/ou Usuario incorretos, verifique e tente novamente");
         localStorage.clear();
     }
 })
