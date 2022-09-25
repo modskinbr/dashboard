@@ -187,7 +187,7 @@ const ID03 = {
   Cargo_Image: designer_img,
   Risco: vfalse,
   Imune: vtrue,
-  Reputacao: "100%",
+  Reputacao: "99%",
   // Divulgadores
   Divulgacoes: "0",
   Colaboracoes: "0",
