@@ -216,7 +216,7 @@ const ID04 = {
   Nome: "Gabriel",
   // hattsug
   Imagem: img+"Gabriel"+type1,
-  Pontos: "30",
+  Pontos: "34",
   Rank: "1",
   Rank_Image: rank_1,
   Pontos_Miticos: "0",
@@ -248,7 +248,7 @@ const ID04 = {
   Verificacoes: "0",
   // RELATORIO DE PONTUAÇÃO //
   Obtido_recente: "Primeiro Login" , Bonus_recente: "1% - 5" , Quantidade_recente: "30",
-  Obtido2: "" , Bonus2: "" , Quantidade2: "",
+  Obtido2: "Colaboração" , Bonus2: "0.5% - 2" , Quantidade2: "4",
   Obtido3: "" , Bonus3: "" , Quantidade3: "",
   Obtido4: "" , Bonus4: "" , Quantidade4: "",
   Obtido5: "" , Bonus5: "" , Quantidade5: "",
