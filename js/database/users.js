@@ -121,9 +121,11 @@ const ID01 = {
   ////
 };
 const ID02 = {
+  DiscordID: "Bruch#9211",
+  Nasceu: "1999",
   Nome: "Gabriel",
   // Bruch
-  Imagem: img+"nouser"+type1,
+  Imagem: img+"Bruch"+type1,
   Pontos: "∞",
   Rank: "∞",
   Rank_Image: rank_0,
