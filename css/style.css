@@ -14,6 +14,24 @@ body {
   margin-top: 50px;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 100px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: gray; 
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+
 #wallp {
     background-image: url(../assets/wallpapers/heimer.jpg);
     background-position: bottom;
