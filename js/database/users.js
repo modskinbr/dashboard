@@ -188,7 +188,7 @@ const ID03 = {
   Cargo: designer,
   Cargo_Image: designer_img,
   Risco: vfalse,
-  Imune: vtrue,
+  Imune: vfalse,
   Reputacao: "99%",
   // Divulgadores
   Divulgacoes: "0",
@@ -234,7 +234,7 @@ const ID04 = {
   Cargo: designer,
   Cargo_Image: designer_img,
   Risco: vfalse,
-  Imune: vtrue,
+  Imune: vfalse,
   Reputacao: "100%",
   // Divulgadores
   Divulgacoes: "0",
@@ -280,7 +280,53 @@ const ID05 = {
   Cargo: sup,
   Cargo_Image: sup_img,
   Risco: vfalse,
-  Imune: vtrue,
+  Imune: vfalse,
+  Reputacao: "100%",
+  // Divulgadores
+  Divulgacoes: "0",
+  Colaboracoes: "0",
+  Video: "0",
+  // Federativa
+  Contribuicoes_Federativa: "0",
+  Participacoes: "0",
+  Bonus_Extra: "0",
+  // Testers
+  Contribuicoes_Tester: "0",
+  Tarefas: "0",
+  Verificacoes: "0",
+  // RELATORIO DE PONTUAÇÃO //
+  Obtido_recente: "Primeiro Login" , Bonus_recente: "1% - 5" , Quantidade_recente: "30",
+  Obtido2: "" , Bonus2: "" , Quantidade2: "",
+  Obtido3: "" , Bonus3: "" , Quantidade3: "",
+  Obtido4: "" , Bonus4: "" , Quantidade4: "",
+  Obtido5: "" , Bonus5: "" , Quantidade5: "",
+  Obtido6: "" , Bonus6: "" , Quantidade6: "",
+  Obtido7: "" , Bonus7: "" , Quantidade7: "",
+  ////
+};
+const ID06 = {
+  DiscordID: "TaikunX3#4758",
+  Nasceu: "2006",
+  Nome: "Victor",
+  // hattsug
+  Imagem: img+"Victor"+type1, 
+  Pontos: "30",
+  Rank: "1",
+  Rank_Image: rank_1,
+  Pontos_Miticos: "0",
+  Elo: sem_elo,
+  Elo_Image: rank_0,
+  Destaque: sem,
+  Destaque_Image: destaque_0,
+  Fragmentos: 0,
+  Fragmentos_Estelares: 0,
+  Essencia_Mitica: 0,
+  Moedas: 0,
+  Parceria: "Nenhuma",
+  Cargo: tester,
+  Cargo_Image: tester_img,
+  Risco: vfalse,
+  Imune: vfalse,
   Reputacao: "100%",
   // Divulgadores
   Divulgacoes: "0",
